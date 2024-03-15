@@ -1,10 +1,14 @@
 import React from "react";
+import Banner from "./components/banner/Banner";
+import Layout from "./components/layout/Layout";
+import Recipes from "./components/recipes/Recipes";
 
 const App = () => {
   return (
-    <div>
-      <h2>Hello world</h2>
-    </div>
+    <Layout>
+      <Banner />
+      <Recipes />
+    </Layout>
   );
 };
 
