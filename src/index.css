@@ -1,3 +1,35 @@
+:root {
+  --main-color: #0be58a;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+* {
+  font-family: "Lexend", sans-serif;
+}
+.text_primary {
+  color: var(--main-color);
+}
+.bg_primary {
+  background: var(--main-color);
+}
+.primary_black {
+  color: rgb(41, 41, 41);
+}
+.secondary_black {
+  color: rgba(40, 40, 40, 0.702);
+}
+.third_black {
+  color: rgb(135, 135, 135);
+}
+.btn {
+  color: rgb(21, 11, 43);
+  font-size: 16px;
+  font-weight: 500;
+  width: 150px;
+  height: 40px;
+  border-radius: 50px;
+  background: var(--main-color);
+}
