@@ -45,6 +45,12 @@ const Recipe = ({ recipe }) => {
             <span className="text-xs">{calories}</span>
           </div>
         </div>
+        {/* button  */}
+        <div className="flex justify-center lg:justify-start mt-5">
+          <button className="rounded-[50px] bg_primary px-4 py-2 font-[600] text-sm   black_primary duration-300 active:scale-95">
+            Want to Cook
+          </button>
+        </div>
       </div>
     </div>
   );
