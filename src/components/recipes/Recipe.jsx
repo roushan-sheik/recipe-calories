@@ -1,4 +1,6 @@
 import React from "react";
+import { FaFire } from "react-icons/fa";
+import { IoTimeOutline } from "react-icons/io5";
 
 const Recipe = ({ recipe }) => {
   const { id, name, image, description, ingredients, time, calories } = recipe;
@@ -15,9 +17,34 @@ const Recipe = ({ recipe }) => {
       {/* cart content box  */}
       <div>
         <h4 className="text-lg mt-5 font-semibold primary_black">{name}</h4>
-        <p className="third_black, text-sm mt-3">{ description }</p>
-        
-        <div></div>
+        <p className="third_black, text-sm mt-3">{description}</p>
+        {/* ingredients box  */}
+        <div>
+          <h3 className="primary_black text-sm font-semibold mt-5">
+            Ingredients: {ingredients.length}
+          </h3>
+          <ul className=" mt-3">
+            {ingredients.map((item) => {
+              return (
+                <li className=" text-sm list-disc list-inside  third_black">
+                  {item}
+                </li>
+              );
+            })}
+          </ul>
+        </div>
+        {/* footer timer and calories box  */}
+        <div className="mt-5 flex gap-2">
+          <div className="flex items-center gap-1 cursor-pointer secondary_black text-sm">
+            <IoTimeOutline />
+            <span className="text-xs">{time}</span>
+          </div>
+
+          <div className="flex items-center gap-1 cursor-pointer secondary_black text-sm">
+            <FaFire />
+            <span className="text-xs">{calories}</span>
+          </div>
+        </div>
       </div>
     </div>
   );
