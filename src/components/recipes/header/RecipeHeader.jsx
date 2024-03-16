@@ -5,7 +5,7 @@ const RecipeHeader = () => {
     <div>
       {/* Header content  */}
       <div className="flex flex-col items-center">
-        <h2 className="text-[35px] font-bold primary_black text-center">
+        <h2 className="lg:text-[35px] text-2xl  font-bold primary_black text-center">
           Our Recipes
         </h2>
         <p className="text-center third_black w-[60%] mt-5 ">
