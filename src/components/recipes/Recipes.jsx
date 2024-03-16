@@ -1,4 +1,7 @@
 import React from "react";
+
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import Recipe from "./Recipe";
 import CurrentlyCook from "./cart/CurrentlyCook";
 import WantCook from "./cart/WantCook";
@@ -12,7 +15,10 @@ const Recipes = ({ recipes }) => {
     // check already Exists
     const isExist = clickedRecipe.find((rec) => rec.name === data.name);
     if (isExist) {
-      alert("Item already exist");
+      toast.error("Already Exists! !", {
+        position: "top-right",
+      });
+      // alert("Item already exist");
       return;
     } else {
       setClickedRecipe([...clickedRecipe, data]);
@@ -22,6 +28,8 @@ const Recipes = ({ recipes }) => {
 
   return (
     <div className=" mt-[90px]">
+      {/* toast  message */}
+      <ToastContainer />
       {/* Recipe Header  */}
       <RecipeHeader />
       {/* Main box of recipe  */}
