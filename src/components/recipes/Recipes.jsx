@@ -10,15 +10,15 @@ const Recipes = ({ recipes }) => {
       {/* Recipe Header  */}
       <RecipeHeader />
       {/* Main box of recipe  */}
-      <div>
+      <div className="flex gap-6 flex-col lg:flex-row mt-10">
         {/* Let Recipe Parent Box  */}
-        <div>
+        <div className="basis-[60%] grid grid-cols-1 lg:grid-cols-2 gap-5">
           {recipes.map((recipe) => (
             <Recipe key={recipe.id} recipe={recipe} />
           ))}
         </div>
         {/* Left cart parent Box */}
-        <div className="flex flex-col">
+        <div className="flex flex-col basis-[40%]">
           <WantCook />
           <CurrentlyCook />
         </div>

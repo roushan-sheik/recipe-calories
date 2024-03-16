@@ -18,10 +18,12 @@ const App = () => {
   }, []);
 
   return (
-    <Layout>
-      <Banner />
-      <Recipes recipes={recipes} />
-    </Layout>
+    <div className="bg-gray-50">
+      <Layout>
+        <Banner />
+        <Recipes recipes={recipes} />
+      </Layout>
+    </div>
   );
 };
 
