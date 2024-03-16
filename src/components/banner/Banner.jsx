@@ -16,12 +16,12 @@ const Banner = () => {
       </div>
       {/* button box  */}
       <div className="mt-8 flex flex-col lg:flex-row justify-center items-center gap-6">
-        <button className="rounded-[50px] bg_primary px-8 py-3 font-[600] text-xl black_primary duration-300 active:scale-95">
+        <button className="rounded-[50px] bg_primary lg:px-8 px-6 lg:py-3 py-2 font-[600] text-lg lg:text-xl black_primary duration-300 active:scale-95">
           Explore Now
         </button>
         <button
           id="Feedback_btn"
-          className="rounded-[50px] font-[700] border border-white px-8 py-3 text-xl text-white duration-200 hover:bg-gray-200 hover:text-white"
+          className="rounded-[50px] font-[700] border border-white lg:px-8 px-6 lg:py-3 py-2 text-lg lg:text-xl text-white duration-200 hover:bg-gray-200 hover:text-white"
         >
           Our Feedback
         </button>

@@ -18,7 +18,7 @@ const App = () => {
   }, []);
 
   return (
-    <div className="bg-gray-50">
+    <div className="">
       <Layout>
         <Banner />
         <Recipes recipes={recipes} />
