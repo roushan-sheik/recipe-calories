@@ -4,14 +4,14 @@ import Layout from "./components/layout/Layout";
 import Recipes from "./components/recipes/Recipes";
 
 const App = () => {
-  const [data, setData] = React.useState([]);
+  const [recipes, setRecipes] = React.useState([]);
 
   React.useEffect(() => {
     try {
       fetch("recipes.json");
       fetch("recipes.json")
         .then((res) => res.json())
-        .then((data) => setData(data));
+        .then((data) => setRecipes(data));
     } catch (error) {
       console.log(error.message);
     }
@@ -20,7 +20,7 @@ const App = () => {
   return (
     <Layout>
       <Banner />
-      <Recipes />
+      <Recipes recipes={recipes} />
     </Layout>
   );
 };
