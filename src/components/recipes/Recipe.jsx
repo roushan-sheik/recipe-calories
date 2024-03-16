@@ -28,7 +28,10 @@ const Recipe = ({ recipe }) => {
           <ul className=" mt-3">
             {ingredients.map((item) => {
               return (
-                <li className=" text-sm list-disc list-inside  third_black">
+                <li
+                  key={item}
+                  className=" text-sm list-disc list-inside  third_black"
+                >
                   {item}
                 </li>
               );
