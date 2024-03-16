@@ -12,13 +12,13 @@ const Recipes = ({ recipes }) => {
       {/* Main box of recipe  */}
       <div className="flex gap-6 flex-col lg:flex-row mt-10">
         {/* Let Recipe Parent Box  */}
-        <div className="basis-[60%] grid grid-cols-1 lg:grid-cols-2 gap-5">
+        <div className="basis-[65%] grid grid-cols-1 lg:grid-cols-2 gap-5">
           {recipes.map((recipe) => (
             <Recipe key={recipe.id} recipe={recipe} />
           ))}
         </div>
         {/* Left cart parent Box */}
-        <div className="flex flex-col basis-[40%]">
+        <div className="flex flex-col basis-[35%] border border-[#28282833] rounded-2xl  shadow-sm bg-white">
           <WantCook />
           <CurrentlyCook />
         </div>

@@ -4,6 +4,8 @@ import { IoTimeOutline } from "react-icons/io5";
 
 const Recipe = ({ recipe }) => {
   const { id, name, image, description, ingredients, time, calories } = recipe;
+  // handleBtnClick
+  function handleBtnClick() {}
   return (
     <div className="border border-[#28282833] rounded-2xl p-5 shadow-sm bg-white">
       {/* image box  */}
@@ -47,7 +49,10 @@ const Recipe = ({ recipe }) => {
         </div>
         {/* button  */}
         <div className="flex justify-center lg:justify-start mt-5">
-          <button className="rounded-[50px] bg_primary px-4 py-2 font-[600] text-sm   black_primary duration-300 active:scale-95">
+          <button
+            onClick={handleBtnClick}
+            className="rounded-[50px] bg_primary px-4 py-3 font-[600] text-sm   black_primary duration-300 active:scale-95"
+          >
             Want to Cook
           </button>
         </div>

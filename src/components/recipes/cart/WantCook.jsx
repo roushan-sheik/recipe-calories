@@ -1,7 +1,33 @@
 import React from "react";
-
+import DynamicCook from "./dynamic/DynamicCook";
+// give me a react jsx table : heading : "want to cook",  row : name ,time,  calories , button
 const WantCook = () => {
-  return <div>WantCook</div>;
+  return (
+    <div className="">
+      <div className="p-4">
+        <h2 className="primary_black text-xl font-semibold text-center mb-3">
+          Want to Cook
+        </h2>
+      </div>
+      {/* name filed */}
+      <div>
+        {/* Header  */}
+        <div className="p-4  flex gap-4 text-sm third_black justify-start ">
+          <span className="basis-[2%]"></span>
+          <span className="basis-[28%] ">Name</span>
+          <span className="basis-[25%]">Time</span>
+          <span className="basis-[25%]">Calories</span>
+          <span className="basis-[20%]"></span>
+        </div>
+        {/* Dynamic Row parent box  */}
+        <div className=" flex flex-col gap-2">
+          <DynamicCook />
+          <DynamicCook />
+        </div>
+        
+      </div>
+    </div>
+  );
 };
 
 export default WantCook;
