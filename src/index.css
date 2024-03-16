@@ -33,3 +33,26 @@
   border-radius: 50px;
   background: var(--main-color);
 }
+
+#banner {
+  border-radius: 24px;
+
+  background: linear-gradient(
+      0deg,
+      rgba(21, 11, 43, 0.9),
+      rgba(21, 11, 43, 0) 100%
+    ),
+    url("./assets/banner-2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  border: 1px solid #ffffff;
+}
+#Feedback_btn {
+  transition: 0.5s;
+}
+#Feedback_btn:hover {
+  background-color: var(--main-color);
+  color: rgb(41, 41, 41);
+  border-color: #0be58a00;
+}
