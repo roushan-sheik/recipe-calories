@@ -31,7 +31,7 @@ const Recipes = ({ recipes }) => {
         </div>
         {/* Left cart parent Box */}
         <div className="flex flex-col basis-[35%] border border-[#28282833] rounded-2xl  shadow-sm bg-white">
-          <WantCook />
+          <WantCook recipe={recipe} />
           <CurrentlyCook />
         </div>
       </div>

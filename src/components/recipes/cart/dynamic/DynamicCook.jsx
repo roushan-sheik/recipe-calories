@@ -1,16 +1,17 @@
 import React from "react";
 
-const DynamicCook = () => {
+const DynamicCook = ({ singleRecipe, index }) => {
+  const { name, time, calories } = singleRecipe;
   function handleBtnClick() {}
   return (
     <>
       <div className=" p-4 flex gap-4 text-xs secondary_black bg-[#28282808] justify-start ">
         <span className="basis-[2%] flex justify-center items-center font-bold">
-          0
+          {index + 1}
         </span>
-        <span className="basis-[28%] ">Chicken Caesar Salad</span>
-        <span className="basis-[25%]">20 minute</span>
-        <span className="basis-[25%]">500</span>
+        <span className="basis-[28%] ">{name}</span>
+        <span className="basis-[25%]">{time}</span>
+        <span className="basis-[25%]">{calories}</span>
         <span className="basis-[20%]">
           <button
             onClick={handleBtnClick}
