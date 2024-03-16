@@ -6,10 +6,17 @@ import RecipeHeader from "./header/RecipeHeader";
 
 const Recipes = ({ recipes }) => {
   // store the clicked recipe data
-  const [recipe, setRecipe] = React.useState([]);
+  const [clickedRecipe, setClickedRecipe] = React.useState([]);
   // get data from recipe
   function getDataFromRecipe(data) {
-    setRecipe([...recipe, data]);
+    // check already Exists
+    const isExist = clickedRecipe.find((rec) => rec.name === data.name);
+    if (isExist) {
+      alert("Item already exist");
+      return;
+    } else {
+      setClickedRecipe([...clickedRecipe, data]);
+    }
   }
   // console.log(recipe);
 
@@ -31,7 +38,7 @@ const Recipes = ({ recipes }) => {
         </div>
         {/* Left cart parent Box */}
         <div className="flex flex-col basis-[35%] border border-[#28282833] rounded-2xl  shadow-sm bg-white">
-          <WantCook recipe={recipe} />
+          <WantCook clickedRecipe={clickedRecipe} />
           <CurrentlyCook />
         </div>
       </div>

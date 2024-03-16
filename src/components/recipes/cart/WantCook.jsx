@@ -1,12 +1,12 @@
 import React from "react";
 import DynamicCook from "./dynamic/DynamicCook";
 // give me a react jsx table : heading : "want to cook",  row : name ,time,  calories , button
-const WantCook = ({ recipe }) => {
+const WantCook = ({ clickedRecipe }) => {
   return (
     <div className="mt-4">
       <div className="p-4">
         <h2 className="primary_black text-xl font-semibold text-center ">
-          Want to Cook: <span>{recipe.length}</span>
+          Want to Cook: <span>{clickedRecipe.length}</span>
         </h2>
       </div>
       {/* name filed */}
@@ -23,7 +23,7 @@ const WantCook = ({ recipe }) => {
         <div className=" flex flex-col gap-2">
           {/* <DynamicCook /> */}
           {/* <DynamicCook /> */}
-          {recipe.map((singleRecipe, index) => (
+          {clickedRecipe.map((singleRecipe, index) => (
             <DynamicCook
               key={singleRecipe.name}
               index={index}
