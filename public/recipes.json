@@ -1,0 +1,114 @@
+[
+  {
+    "id": 1,
+    "name": "Beef Burger",
+    "image": "https://images.unsplash.com/photo-1571091718767-18b5b1457add?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "description": "A classic beef burger recipe that is juicy and flavorful.",
+    "ingredients": [
+      "500g ground beef",
+      "1 onion, chopped",
+      "2 cloves garlic, minced",
+      "sesame seeds"
+    ],
+    "time": "30 minutes",
+    "calories": "400 calories"
+  },
+  {
+    "id": 2,
+    "name": "Spaghetti Bolognese",
+    "image": "https://media.istockphoto.com/id/1166681454/photo/spaghetti-with-bolognese-sauce-and-parmesan-cheese.jpg?s=1024x1024&w=is&k=20&c=DvjBT1Ps6p8AAao3kBji1BqS0b6B57TtWZQ2vbEB8yg=",
+    "description": "A hearty Italian dish with rich tomato sauce and ground beef.",
+    "ingredients": [
+      "500g ground beef",
+      "1 onion, chopped",
+      "2 cloves garlic, minced",
+      "400g spaghetti"
+    ],
+    "time": "45 minutes",
+    "calories": "450 calories"
+  },
+  {
+    "id": 3,
+    "name": "Beef Stir Fry",
+    "image": "https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "description": "A quick and easy stir fry recipe with tender beef and colorful vegetables.",
+    "ingredients": [
+      "500g beef strips",
+      "1 onion, sliced",
+      "2 cloves garlic, minced",
+      "1 bell pepper, sliced"
+    ],
+    "time": "25 minutes",
+    "calories": "350 calories"
+  },
+  {
+    "id": 4,
+    "name": "Beef Tacos",
+    "image": "https://plus.unsplash.com/premium_photo-1661730314652-911662c0d86e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "description": "Tasty tacos filled with seasoned ground beef and your favorite toppings.",
+    "ingredients": [
+      "500g ground beef",
+      "1 onion, chopped",
+      "2 cloves garlic, minced",
+      "taco shells"
+    ],
+    "time": "20 minutes",
+    "calories": "380 calories"
+  },
+  {
+    "id": 5,
+    "name": "Beef and Broccoli",
+    "image": "https://images.unsplash.com/photo-1585903211716-c5633c87554d?q=80&w=2019&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "description": "A classic Chinese dish featuring tender beef and crisp broccoli in a savory sauce.",
+    "ingredients": [
+      "500g beef sirloin, thinly sliced",
+      "1 onion, sliced",
+      "2 cloves garlic, minced",
+      "1 cup broccoli florets"
+    ],
+    "time": "30 minutes",
+    "calories": "380 calories"
+  },
+  {
+    "id": 6,
+    "name": "Beef and Vegetable Soup",
+    "image": "https://images.unsplash.com/photo-1530524428108-f983ca74ad0f?q=80&w=1776&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "description": "A comforting soup filled with hearty beef and nutritious vegetables.",
+    "ingredients": [
+      "500g stewing beef, cubed",
+      "1 onion, chopped",
+      "2 cloves garlic, minced",
+      "6 cups beef broth"
+    ],
+    "time": "2 hours",
+    "calories": "300 calories"
+  },
+  {
+    "id": 7,
+    "name": "Beef and Mushroom Stir Fry",
+    "image": "https://images.unsplash.com/photo-1541296093088-f079b71d3478?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "description": "A flavorful stir fry with tender beef and earthy mushrooms.",
+    "ingredients": [
+      "500g beef sirloin, thinly sliced",
+      "1 onion, sliced",
+      "2 cloves garlic, minced",
+      "200g mushrooms, sliced"
+    ],
+    "time": "25 minutes",
+    "calories": "380 calories"
+  },
+  {
+    "id": 8,
+    "name": "Beef and Cheese Quesadillas",
+    "image": "https://images.unsplash.com/photo-1485963631004-f2f00b1d6606?q=80&w=1975&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "description": "Cheesy and delicious quesadillas filled with seasoned beef.",
+    "ingredients": [
+      "500g ground beef",
+      "1 onion, chopped",
+      "2 cloves garlic, minced",
+      "8 small flour tortillas"
+    ],
+    "time": "20 minutes",
+    "calories": "420 calories"
+  }
+]

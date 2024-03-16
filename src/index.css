@@ -1,8 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap");
 :root {
   --main-color: #0be58a;
 }
-
-@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
