@@ -24,7 +24,11 @@ const CurrentlyCook = ({ prepareData }) => {
           {/* <DynamicCurrent />
           <DynamicCurrent /> */}
           {prepareData.map((item, index) => (
-            <DynamicCurrent key={item.name} item={item} index={index} />
+            <DynamicCurrent
+              key={(item.name, item.time)}
+              item={item}
+              index={index}
+            />
           ))}
         </div>
       </div>
