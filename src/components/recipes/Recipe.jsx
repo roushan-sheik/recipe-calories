@@ -1,6 +1,7 @@
 import React from "react";
 
 const Recipe = ({ recipe }) => {
+  const { id, name, image, description, ingredients, time, calories } = recipe;
   return (
     <div className="border border-[#28282833] rounded-2xl p-5 shadow-sm bg-white">
       {/* image box  */}
@@ -10,6 +11,10 @@ const Recipe = ({ recipe }) => {
           src={recipe.image}
           alt=""
         />
+      </div>
+      {/* cart content box  */}
+      <div>
+        <h4>{}</h4>
       </div>
     </div>
   );
