@@ -1,12 +1,13 @@
 import React from "react";
 import DynamicCurrent from "./dynamic/DynamicCurrent";
 
-const CurrentlyCook = () => {
+const CurrentlyCook = ({ prepareData }) => {
+  // console.log("prepareData:", prepareData);
   return (
     <div className="">
       <div className="p-4">
         <h2 className="primary_black text-xl font-semibold text-center ">
-          Currently Cooking: <span>0</span>
+          Currently Cooking: <span>{prepareData.length}</span>
         </h2>
       </div>
       {/* name filed */}
@@ -20,10 +21,12 @@ const CurrentlyCook = () => {
         </div>
         {/* Dynamic want to cook row parent box  */}
         <div className=" flex flex-col gap-2">
-          <DynamicCurrent />
-          <DynamicCurrent />
+          {/* <DynamicCurrent />
+          <DynamicCurrent /> */}
+          {prepareData.map((item, index) => (
+            <DynamicCurrent key={item.name} item={item} index={index} />
+          ))}
         </div>
-    
       </div>
     </div>
   );

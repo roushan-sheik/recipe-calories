@@ -3,7 +3,7 @@ import React from "react";
 const DynamicCook = ({ singleRecipe, index, getDataFromPrepare }) => {
   const { name, time, calories } = singleRecipe;
   function handlePreparingClick() {
-    getDataFromPrepare(name);
+    getDataFromPrepare(singleRecipe);
   }
   return (
     <>

@@ -9,8 +9,8 @@ import RecipeHeader from "./header/RecipeHeader";
 
 const Recipes = ({ recipes }) => {
   //NOTE - store the clicked recipe data
-  const [ clickedRecipe, setClickedRecipe ] = React.useState( [] );
-  const [prepareData , setPrepareData]= React.useState([])
+  const [clickedRecipe, setClickedRecipe] = React.useState([]);
+  const [prepareData, setPrepareData] = React.useState([]);
   //NOTE - get data from recipe
   function getDataFromRecipe(data) {
     // check already Exists
@@ -30,11 +30,15 @@ const Recipes = ({ recipes }) => {
   }
   // console.log(recipe);
   //NOTE - get data from prepare
-  function getDataFromPrepare ( data )
-  {
-    
+  function getDataFromPrepare(prepData) {
+    setClickedRecipe(
+      clickedRecipe.filter((item) => item.name !== prepData.name)
+    );
+    // set prepare data
+    setPrepareData([...prepareData, prepData]);
     // alert(data);
   }
+ 
   return (
     <div className=" mt-[90px]">
       {/* toast  message */}
@@ -59,7 +63,7 @@ const Recipes = ({ recipes }) => {
             clickedRecipe={clickedRecipe}
             getDataFromPrepare={getDataFromPrepare}
           />
-          <CurrentlyCook />
+          <CurrentlyCook prepareData={prepareData} />
         </div>
       </div>
     </div>
