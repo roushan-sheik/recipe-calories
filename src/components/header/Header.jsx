@@ -5,7 +5,7 @@ import { IoSearchOutline } from "react-icons/io5";
 const Header = () => {
   return (
     <nav>
-      <div className="navbar py-8 bg-base-100 ">
+      <div className="navbar py-8  bg-base-100 ">
         <div className="navbar-start  ">
           {/* Left box */}
           <div className="dropdown">
