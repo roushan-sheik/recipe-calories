@@ -1,7 +1,7 @@
 import React from "react";
 import DynamicCook from "./dynamic/DynamicCook";
 // give me a react jsx table : heading : "want to cook",  row : name ,time,  calories , button
-const WantCook = ({ clickedRecipe }) => {
+const WantCook = ({ clickedRecipe, getDataFromPrepare }) => {
   return (
     <div className="mt-4">
       <div className="p-4">
@@ -28,6 +28,7 @@ const WantCook = ({ clickedRecipe }) => {
               key={singleRecipe.name}
               index={index}
               singleRecipe={singleRecipe}
+              getDataFromPrepare={getDataFromPrepare}
             />
           ))}
         </div>

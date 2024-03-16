@@ -1,8 +1,10 @@
 import React from "react";
 
-const DynamicCook = ({ singleRecipe, index }) => {
+const DynamicCook = ({ singleRecipe, index, getDataFromPrepare }) => {
   const { name, time, calories } = singleRecipe;
-  function handlePreparingClick() {}
+  function handlePreparingClick() {
+    getDataFromPrepare(name);
+  }
   return (
     <>
       <div className=" p-4 flex gap-4 text-xs secondary_black bg-[#28282808] justify-start ">

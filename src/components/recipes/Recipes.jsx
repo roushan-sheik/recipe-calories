@@ -8,9 +8,10 @@ import WantCook from "./cart/WantCook";
 import RecipeHeader from "./header/RecipeHeader";
 
 const Recipes = ({ recipes }) => {
-  // store the clicked recipe data
-  const [clickedRecipe, setClickedRecipe] = React.useState([]);
-  // get data from recipe
+  //NOTE - store the clicked recipe data
+  const [ clickedRecipe, setClickedRecipe ] = React.useState( [] );
+  const [prepareData , setPrepareData]= React.useState([])
+  //NOTE - get data from recipe
   function getDataFromRecipe(data) {
     // check already Exists
     const isExist = clickedRecipe.find((rec) => rec.name === data.name);
@@ -28,7 +29,12 @@ const Recipes = ({ recipes }) => {
     }
   }
   // console.log(recipe);
-
+  //NOTE - get data from prepare
+  function getDataFromPrepare ( data )
+  {
+    
+    // alert(data);
+  }
   return (
     <div className=" mt-[90px]">
       {/* toast  message */}
@@ -49,7 +55,10 @@ const Recipes = ({ recipes }) => {
         </div>
         {/* Left cart parent Box */}
         <div className="flex flex-col basis-[35%] border border-[#28282833] rounded-2xl  shadow-sm bg-white">
-          <WantCook clickedRecipe={clickedRecipe} />
+          <WantCook
+            clickedRecipe={clickedRecipe}
+            getDataFromPrepare={getDataFromPrepare}
+          />
           <CurrentlyCook />
         </div>
       </div>
