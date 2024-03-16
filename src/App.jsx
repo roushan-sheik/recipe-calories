@@ -8,7 +8,6 @@ const App = () => {
 
   React.useEffect(() => {
     try {
-      fetch("recipes.json");
       fetch("recipes.json")
         .then((res) => res.json())
         .then((data) => setRecipes(data));

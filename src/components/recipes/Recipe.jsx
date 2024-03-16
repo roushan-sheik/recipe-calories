@@ -2,10 +2,13 @@ import React from "react";
 import { FaFire } from "react-icons/fa";
 import { IoTimeOutline } from "react-icons/io5";
 
-const Recipe = ({ recipe }) => {
+const Recipe = ({ recipe, getDataFromRecipe }) => {
   const { id, name, image, description, ingredients, time, calories } = recipe;
   // handleBtnClick
-  function handleBtnClick() {}
+  function handleBtnClick() {
+    let clickedObj = { name, time, calories };
+    getDataFromRecipe(clickedObj);
+  }
   return (
     <div className="border border-[#28282833] rounded-2xl p-5 shadow-sm bg-white">
       {/* image box  */}

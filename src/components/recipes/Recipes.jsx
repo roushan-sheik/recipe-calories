@@ -5,6 +5,14 @@ import WantCook from "./cart/WantCook";
 import RecipeHeader from "./header/RecipeHeader";
 
 const Recipes = ({ recipes }) => {
+  // store the clicked recipe data
+  const [recipe, setRecipe] = React.useState([]);
+  // get data from recipe
+  function getDataFromRecipe(data) {
+    setRecipe([...recipe, data]);
+  }
+  // console.log(recipe);
+
   return (
     <div className=" mt-[90px]">
       {/* Recipe Header  */}
@@ -14,7 +22,11 @@ const Recipes = ({ recipes }) => {
         {/* Let Recipe Parent Box  */}
         <div className="basis-[65%] grid grid-cols-1 lg:grid-cols-2 gap-5">
           {recipes.map((recipe) => (
-            <Recipe key={recipe.id} recipe={recipe} />
+            <Recipe
+              getDataFromRecipe={getDataFromRecipe}
+              key={recipe.id}
+              recipe={recipe}
+            />
           ))}
         </div>
         {/* Left cart parent Box */}
