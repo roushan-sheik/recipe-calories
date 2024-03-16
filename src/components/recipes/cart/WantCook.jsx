@@ -3,10 +3,10 @@ import DynamicCook from "./dynamic/DynamicCook";
 // give me a react jsx table : heading : "want to cook",  row : name ,time,  calories , button
 const WantCook = () => {
   return (
-    <div className="">
+    <div className="mt-4">
       <div className="p-4">
-        <h2 className="primary_black text-xl font-semibold text-center mb-3">
-          Want to Cook
+        <h2 className="primary_black text-xl font-semibold text-center ">
+          Want to Cook: <span>0</span>
         </h2>
       </div>
       {/* name filed */}
@@ -19,12 +19,13 @@ const WantCook = () => {
           <span className="basis-[25%]">Calories</span>
           <span className="basis-[20%]"></span>
         </div>
-        {/* Dynamic Row parent box  */}
+        {/* Dynamic want to cook row parent box  */}
         <div className=" flex flex-col gap-2">
           <DynamicCook />
           <DynamicCook />
         </div>
-        
+        {/* Dynamic dynamic currently cooking row parent box  */}
+        <div></div>
       </div>
     </div>
   );
