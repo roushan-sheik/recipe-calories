@@ -22,6 +22,9 @@ const Recipes = ({ recipes }) => {
       return;
     } else {
       setClickedRecipe([...clickedRecipe, data]);
+      toast.success("Successfully added", {
+        position: "top-center",
+      });
     }
   }
   // console.log(recipe);
