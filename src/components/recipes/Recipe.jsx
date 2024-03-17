@@ -45,7 +45,7 @@ const Recipe = ({ recipe, getDataFromRecipe }) => {
         <div className="mt-5 flex gap-2">
           <div className="flex items-center gap-1 cursor-pointer secondary_black text-sm">
             <IoTimeOutline />
-            <span className="text-xs">{time}</span>
+            <span className="text-xs">{time} minutes</span>
           </div>
 
           <div className="flex items-center gap-1 cursor-pointer secondary_black text-sm">

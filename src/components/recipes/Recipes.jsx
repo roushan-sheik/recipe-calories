@@ -36,9 +36,12 @@ const Recipes = ({ recipes }) => {
     );
     // set prepare data
     setPrepareData([...prepareData, prepData]);
+    toast.success("Cooking...", {
+      position: "bottom-center",
+    });
     // alert(data);
   }
- 
+
   return (
     <div className=" mt-[90px]">
       {/* toast  message */}
