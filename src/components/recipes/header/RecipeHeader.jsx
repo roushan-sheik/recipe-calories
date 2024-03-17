@@ -9,9 +9,10 @@ const RecipeHeader = () => {
           Our Recipes
         </h2>
         <p className="text-center third_black w-[60%] mt-5 ">
-          Lorem ipsum dolor sit amet consectetur. Proin et feugiat senectus
-          vulputate netus pharetra rhoncus. Eget urna volutpat curabitur
-          elementum mauris aenean neque.{" "}
+          Our recipes are carefully curated to delight your taste buds and
+          inspire your culinary creativity. Each recipe is crafted with
+          precision and passion, drawing inspiration from diverse cuisines and
+          culinary traditions from around the world.
         </p>
       </div>
     </div>
