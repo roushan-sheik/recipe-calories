@@ -15,9 +15,9 @@ const CurrentlyCook = ({ prepareData }) => {
         {/* Header  */}
         <div className="p-4  flex gap-4 text-sm third_black justify-start ">
           <span className="basis-[3%]"></span>
-          <span className="basis-[32%] ">Name</span>
-          <span className="basis-[32%]">Time</span>
-          <span className="basis-[32%]">Calories</span>
+          <span className="basis-[30%] ">Name</span>
+          <span className="basis-[33%]">Time</span>
+          <span className="basis-[33%]">Calories</span>
         </div>
         {/* Dynamic want to cook row parent box  */}
         <div className=" flex flex-col gap-2">
@@ -30,6 +30,13 @@ const CurrentlyCook = ({ prepareData }) => {
               index={index}
             />
           ))}
+          {/* total time and calories  */}
+          <div className=" p-4 flex gap-4 text-xs font-[600] secondary_black bg-[#28282808] justify-start ">
+            <span className="basis-[3%] flex justify-center items-center font-bold"></span>
+            <span className="basis-[30%] "></span>
+            <span className="basis-[33%]">Total Time = 20 minutes</span>
+            <span className="basis-[33%]">Total Calories = 1000 calories</span>
+          </div>
         </div>
       </div>
     </div>
