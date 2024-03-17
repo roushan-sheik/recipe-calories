@@ -36,7 +36,7 @@ const Recipes = ({ recipes }) => {
     );
     // set prepare data
     setPrepareData([...prepareData, prepData]);
-    toast.success("Cooking...", {
+    toast.info("Cooking...", {
       position: "bottom-center",
     });
     // alert(data);
