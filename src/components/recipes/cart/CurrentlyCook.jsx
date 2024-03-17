@@ -2,9 +2,9 @@ import React from "react";
 import DynamicCurrent from "./dynamic/DynamicCurrent";
 
 const CurrentlyCook = ({ prepareData }) => {
-  const [totalTime, setTotalTime] = React.useState(0);
-  const [ totalCalories, setTotalCalories ] = React.useState( 0 );
-  // prepareData.reduce((acc, cur)=>acc.time+)
+  const totalTime = prepareData.reduce((acc, cur) => cur.time + acc, 0);
+  const totalCalories = prepareData.reduce((acc, cur) => cur.calories + acc, 0);
+
   // console.log("prepareData:", prepareData);
   return (
     <div className="">

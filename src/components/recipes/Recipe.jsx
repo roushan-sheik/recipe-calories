@@ -50,7 +50,7 @@ const Recipe = ({ recipe, getDataFromRecipe }) => {
 
           <div className="flex items-center gap-1 cursor-pointer secondary_black text-sm">
             <FaFire />
-            <span className="text-xs">{calories}</span>
+            <span className="text-xs">{calories} calories</span>
           </div>
         </div>
         {/* button  */}

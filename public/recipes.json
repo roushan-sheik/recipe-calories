@@ -11,7 +11,7 @@
       "sesame seeds"
     ],
     "time": 30,
-    "calories": "400 calories"
+    "calories": 400
   },
   {
     "id": 2,
@@ -25,7 +25,7 @@
       "400g spaghetti"
     ],
     "time": 45,
-    "calories": "450 calories"
+    "calories": 450
   },
   {
     "id": 3,
@@ -39,7 +39,7 @@
       "1 bell pepper, sliced"
     ],
     "time": 25,
-    "calories": "350 calories"
+    "calories": 350
   },
   {
     "id": 4,
@@ -53,7 +53,7 @@
       "taco shells"
     ],
     "time": 20,
-    "calories": "380 calories"
+    "calories": 380
   },
   {
     "id": 5,
@@ -67,7 +67,7 @@
       "1 cup broccoli florets"
     ],
     "time": 30,
-    "calories": "380 calories"
+    "calories": 380
   },
   {
     "id": 6,
@@ -81,7 +81,7 @@
       "6 cups beef broth"
     ],
     "time": 29,
-    "calories": "300 calories"
+    "calories": 300
   },
   {
     "id": 7,
@@ -95,7 +95,7 @@
       "200g mushrooms, sliced"
     ],
     "time": 25,
-    "calories": "380 calories"
+    "calories": 380
   },
   {
     "id": 8,
@@ -109,6 +109,6 @@
       "8 small flour tortillas"
     ],
     "time": 20,
-    "calories": "420 calories"
+    "calories": 420
   }
 ]

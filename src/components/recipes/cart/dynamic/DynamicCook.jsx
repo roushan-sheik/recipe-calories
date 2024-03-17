@@ -12,8 +12,8 @@ const DynamicCook = ({ singleRecipe, index, getDataFromPrepare }) => {
           {index + 1}
         </span>
         <span className="basis-[28%] ">{name}</span>
-        <span className="basis-[25%]">{time}</span>
-        <span className="basis-[25%]">{calories}</span>
+        <span className="basis-[25%]">{time} minutes</span>
+        <span className="basis-[25%]">{calories} calories</span>
         <span className="basis-[20%]">
           <button
             onClick={handlePreparingClick}

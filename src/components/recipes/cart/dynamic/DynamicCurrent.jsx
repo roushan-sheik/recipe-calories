@@ -11,8 +11,8 @@ const DynamicCurrent = ({ item, index }) => {
           {index + 1}
         </span>
         <span className="basis-[30%] ">{name}</span>
-        <span className="basis-[33%]">{time}</span>
-        <span className="basis-[33%]">{calories}</span>
+        <span className="basis-[33%]">{time} minutes</span>
+        <span className="basis-[33%]">{calories} calories</span>
       </div>
     </>
   );
